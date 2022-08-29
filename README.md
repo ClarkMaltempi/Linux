@@ -12,6 +12,7 @@
 <a href="#Arquivos_Compactados">Arquivos Compactados</a></br>
 <a href="#Repositorios">Repositórios</a></br>
 <a href="#Repositorios_Redhat_Fedora_CentOS">Pacotes Redhat, Fedora, CentOS</a></br>
+<a href="#Instalacao">Instalação</a></br>
 
 # Sobre
 
@@ -237,3 +238,34 @@ yum clean packages                  #: Limpa um cache de rpm, apagando os pacote
 yum clean all                       #: Remove os arquivos de cache e o cabeçalho do pacote
  
  ```
+  
+  
+  
+  # Instalacao
+  
+  ```shell
+  $ tree
+  .
+  ├── Instalação
+  │   └── Swap
+  |   └── /usr (via NFS)
+  |   └── Limitação 1024 ciclos
+  ├── Gerenciador de Boot
+  |     └── LILO
+  |       ├── /etc/lilo.conf
+  |       ├── lilo
+  |     └── GRUB
+  |       ├── /boot/grub/menu.lst
+  |       ├── /sbin/grub-install
+  |
+  ├── /var
+  ├── /home
+  ├── /boot
+  ├── /(raiz)
+  ├── /tmp
+  └── MBR
+     
+```
+  
+  
+  
