@@ -222,7 +222,7 @@ apt remove nome-pacote   #: Remove um pacote
   
  ```
   
- #Repositorios_Redhat_Fedora_CentOS
+ # Repositorios_Redhat_Fedora_CentOS
   
  ```.sh
   
