@@ -10,6 +10,7 @@
 <a href="#Acessos_Remoto">Acessos Remoto com ssh</a></br>
 <a href="#Manipula_Contas">Comandos para Manipulação de contas</a></br>
 <a href="#Arquivos_Compactados">Arquivos Compactados</a></br>
+<a href="#Repositorios">Repositórios</a></br>
 
 # Sobre
 
@@ -204,3 +205,20 @@ tar -xvf arquivo.tar        #: Extrai um arquivo tar
 #.tar = tar armazena vários arquivos em um único arquivo
    
  ```
+  
+
+# Repositorios
+  
+ ```.sh  
+  
+apt update               #: Atualiza a lista do repositório
+apt upgrade              #: Atualiza seus pacotes
+apt dist-upgrade         #: Atualiza sua Distribuição
+cat /etc/sources.list    #: Exibe a lista dentro do repositório
+apt autoclean            #: Apaga os pacotes que não existem mais
+apt autoremove           #: Apaga os pacotes abandonados
+apt remove nome-pacote   #: Remove um pacote
+  
+ ```
+  
+  
