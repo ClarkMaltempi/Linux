@@ -8,6 +8,7 @@
 <a href="#Comandos_Diversos">Comandos Diversos</a></br>
 <a href="#Comandos_Rede">Comandos de Rede</a></br>
 <a href="#Acessos_Remoto">Acessos Remoto com ssh</a></br>
+<a href="#Manipula_Contas">Comandos para Manipulação de contas</a></br>
 
 # Sobre
 
@@ -46,13 +47,13 @@ tac             #: Quase a mesma coisa só que, mostra o conteúdo inverso
   ```.sh
   
   
-rm        #: Apaga arquivos
-rm -i     #: Pergunta antes de remover, esta é ativada por padrão
-rm -v     #: Mostra os arquivos na medida que são removidos
-rm -r     #: Usado para remover arquivos em sub-diretórios
-rm -f     #: Remove os arquivos sem perguntar
-rm teste.txt    #: Apaga o arquivo teste.txt no diretório atual
-rm *.txt        #: Apaga todos os arquivos do diretório atual que terminam com .txt
+rm                      #: Apaga arquivos
+rm -i                   #: Pergunta antes de remover, esta é ativada por padrão
+rm -v                   #: Mostra os arquivos na medida que são removidos
+rm -r                   #: Usado para remover arquivos em sub-diretórios
+rm -f                   #: Remove os arquivos sem perguntar
+rm teste.txt            #: Apaga o arquivo teste.txt no diretório atual
+rm *.txt                #: Apaga todos os arquivos do diretório atual que terminam com .txt
 rm *.txt teste.novo      #: Apaga todos os arquivos do diretório atual que terminam com .txt e também o arquivo teste.novo
 cp                       #: Copia arquivos
 cp -i                    #: Pergunta antes de substituir um arquivo existente
@@ -159,4 +160,30 @@ ssh usuario@192.168.1.20                          #: ok
 ssh -p porta usuário@ip                           #: Conectar por uma porta especificada
   
  ```
+  
+  
+ # Manipula_Contas
+  
+  
+  ```.sh
+  
+adduser                    #: Adiciona um usuário ou grupo no sistema
+adduser fernando           #: Cria um usuário chamado fernando
+adduser -group usuarios    #: Cria um novo grupo ao invés de um novo usuário
+userdel                    #: Apagar
+userdel -r fernando        #: Força a remoção dos dados do usuário
+userdel -f fernando        #: Remove o diretório HOME
+groups                     #: Mostra os grupos que o usuário pertence
+addgroup                   #: Adiciona um novo grupo de usuários no sistema
+addgroup usuarios2         #: As opções usadas são as mesmas do adduser
+groupdel usuarios2         #: Apaga um grupo do sistema
+passwd                     #: Modifica a parâmetros e senha de usuário
+passwd fernando            #: Muda a senha
+passwd -x fernando         #: Especifica o número de dias que a senha poderá ser usada
+passwd -i fernando         #: Mínimo de dias para a senha ser alterada
+passwd -l fernando         #: Bloqueia a conta do usuário
+passwd -u fernando         #: Desbloqueia a conta de um usuário
+   
+ ```
+  
   
