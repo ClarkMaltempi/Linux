@@ -9,6 +9,7 @@
 <a href="#Comandos_Rede">Comandos de Rede</a></br>
 <a href="#Acessos_Remoto">Acessos Remoto com ssh</a></br>
 <a href="#Manipula_Contas">Comandos para Manipulação de contas</a></br>
+<a href="#Arquivos_Compactados">Arquivos Compactados</a></br>
 
 # Sobre
 
@@ -186,4 +187,20 @@ passwd -u fernando         #: Desbloqueia a conta de um usuário
    
  ```
   
+ # Arquivos_Compactados
   
+ ```.sh
+  
+bzip2           #: Comprime um arquivo
+bunzip2         #: Descompacta um arquivo
+gzip            #: Comprime um arquivo
+gunzip          #: Descompacta um arquivo
+tar -cvf arquivo.tar arq1 arq2 pasta1: Cria um arquivo contendo ‘arq1’, ‘ arq2′ e ‘pasta1’
+tar -xvf arquivo.tar        #: Extrai um arquivo tar
+  
+  
+#.bz2 = Arquivo compactado com o bzip2
+#.gz = Arquivo compactado com o gzip
+#.tar = tar armazena vários arquivos em um único arquivo
+   
+ ```
