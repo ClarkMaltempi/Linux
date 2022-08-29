@@ -11,6 +11,7 @@
 <a href="#Manipula_Contas">Comandos para Manipulação de contas</a></br>
 <a href="#Arquivos_Compactados">Arquivos Compactados</a></br>
 <a href="#Repositorios">Repositórios</a></br>
+<a href="#Repositorios_Redhat_Fedora_CentOS">Pacotes Redhat, Fedora, CentOS</a></br>
 
 # Sobre
 
@@ -221,4 +222,18 @@ apt remove nome-pacote   #: Remove um pacote
   
  ```
   
+ #Repositorios_Redhat_Fedora_CentOS
   
+ ```.sh
+  
+  
+yum install nome-pacote             #: Baixa e instala um pacote rpm
+yum localinstall nome-pacote.rpm    #:Instalar um RPM e vai tentar resolver todas as dependências para você, usando seus repositórios
+yum update nome-pacote              #: Atualiza todos os pacotes instalados no sistema
+yum remove                          #: Remove um pacote RPM
+yum list                            #: Lista todos os pacotes instalados no sistema
+yum search nome-pacote              #: Encontra um pacote no repositório rpm
+yum clean packages                  #: Limpa um cache de rpm, apagando os pacotes baixados
+yum clean all                       #: Remove os arquivos de cache e o cabeçalho do pacote
+ 
+ ```
