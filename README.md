@@ -6,6 +6,8 @@
 <a href="#Comandos">Comandos de Manipulação Diretórios</a></br>
 <a href="#Comandos_Arquivos">Comandos de Manipulação de Arquivos</a></br>
 <a href="#Comandos_Diversos">Comandos Diversos</a></br>
+<a href="#Comandos_Rede">Comandos de Rede</a></br>
+<a href="#Acessos_Remoto">Acessos Remoto com ssh</a></br>
 
 # Sobre
 
@@ -106,7 +108,55 @@ shutdown -h now             #: Desligar o computador imediatamente
 shutdown -r now             #: Reinicia o computador imediatamente 
   
 ```
+ 
+# Comandos_Rede
+  
+ ```.sh
   
   
+ifconfig          #: Verificar seu endereço IP
+ifconfig eth0     #: Exibe a configuração de uma placa de rede eth0
+ifup eth0         #: Ativa uma interface ‘eth0’
+ifdown eth0       #: Desabilita
+ifconfig eth0 192.168.0.1 netmask 255.255.255.0   #: Configura IP
+dhclient eth0                                     #: Ativa a interface ‘eth0’ em modo dhcp
+route -n                                          #: Exibe tabela de rota
+host www.google.com                               #: Descobrir o endereço IP de um host
+iwconfig eth1                                     #: Exibe a configuração de uma placa de rede sem fio
+iwlist scan                                       #: Exibe as redes sem fio
+who                                               #: Mostra quem está atualmente conectado no computador
+who -b                                            #: Mostra o horário do último boot do sistema
+who -q                                            #: Mostra o total de usuários conectados aos terminais
+who -r                                            #: Mostra o nível de execução atual do sistema
+who -H                                            #: Mostra o cabeçalho das colunas
+whoami                                            #: Mostra o nome que usou para se conectar ao sistema
+dnsdomainname                                     #: Mostra o nome do domínio de seu sistema
+hostname                                          #: Mostra ou muda o nome de seu computador na rede
+traceroute                                        #: Mostra na tela o caminho percorrido entre os Gateways da rede
+traceroute -n                                     #: Endereços numericamente ao invés de usar resolução DNS
+traceroute www.debian.org                         #: Caminho percorrido por um pacote
+tracepath www.google.com                          #: Parecido ao comando traceroute 
+netstat                                           #: Mostra conexões de rede, tabela de roteamento, estatísticas...
+netstat -i eth0                                   #: Estatísticas da interface de rede
+netstat -t eth0                                   #: Lista conexões TCP
+netstat -u eth0                                   #: Lista conexões UD
+wall                                              #: Faz a leitura de um arquivo e escreve o resultado em todos os terminais
+wall teste.txt                                    #: Somente o usuário root pode utilizar este comando
+
   
+ # Exemplo: wall /tmp/mensagem.txt, echo Teste de mensagem enviada a todos
+ # os usuários conectados ao sistema | wall 
+ 
+ ```
+  
+ # Acessos_Remoto
+  
+ ```.sh
+
+apt-get install openssh-client                    #: Instalação do cliente
+apt-get install openssh-server                    #: Instalação do servidor
+ssh usuario@192.168.1.20                          #: ok
+ssh -p porta usuário@ip                           #: Conectar por uma porta especificada
+  
+ ```
   
