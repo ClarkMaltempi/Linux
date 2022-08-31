@@ -36,6 +36,9 @@ ls -R           #: Lista diretórios e sub-diretórios recursivamente.
 ls ~            #: Lista o diretório nativo - root.
 ls /root        #: Lista o diretório nativo - root.
 ls -l           #: Lista longa
+ls -l | more    #: more Administra a pagina de vídeo juntando com o comando ls através do | (pipe)
+ls -a           #: Lista Arquivos ocultos (identificado na frente do diretório e o arquivo um ".")
+ctrl C          #: Interrompe o processo
 cd home         #: Entra no Diretório home
 cd ~            #: Diretório HOME
 cd /            #: retornará ao diretório raíz.
