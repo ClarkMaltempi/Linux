@@ -40,6 +40,9 @@ ls -l | more    #: more Administra a pagina de vídeo juntando com o comando ls 
 ls -a           #: Lista Arquivos ocultos (identificado na frente do diretório e o arquivo um ".")
 ls -F           #: Lista e adiciona simbolo para identificar (diretório, arquivo e link)
 ls -Fa          #: Combinando comandos -a e -F
+ls -t           #: listar por data e time
+ls -lt          #: listar por data e time com os valores na tela
+ls -1           #: Lista os arquivos em uma linha
 ctrl C          #: Interrompe o processo
 cd home         #: Entra no Diretório home
 cd ~            #: Diretório HOME
