@@ -275,6 +275,8 @@ yum clean all                       #: Remove os arquivos de cache e o cabeçalh
 >FHS - FileSystem Hierarchy Standart
 >Hierarquia Padrão do Sistema de Arquivos
 
+ ```shell
+  
 /(Diretório raiz)
 
 ├── /home #Diretório de trabalho dos usuários
@@ -292,4 +294,4 @@ yum clean all                       #: Remove os arquivos de cache e o cabeçalh
 ├── /var  #contém arquivos de dados variáveis
 └── /opt  #pacotes adicionais
   
-  
+```
