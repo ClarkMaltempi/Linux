@@ -64,14 +64,14 @@ tac             #: Quase a mesma coisa só que, mostra o conteúdo inverso
 
   ```.sh
   
-  
-rm                      #: Apaga arquivos
-rm -i                   #: Pergunta antes de remover, esta é ativada por padrão
-rm -v                   #: Mostra os arquivos na medida que são removidos
-rm -r                   #: Usado para remover arquivos em sub-diretórios
-rm -f                   #: Remove os arquivos sem perguntar
-rm teste.txt            #: Apaga o arquivo teste.txt no diretório atual
-rm *.txt                #: Apaga todos os arquivos do diretório atual que terminam com .txt
+touch [arquivo.txt]      #: Criar um arquivo vazio
+rm                       #: Apaga arquivos
+rm -i                    #: Pergunta antes de remover, esta é ativada por padrão
+rm -v                    #: Mostra os arquivos na medida que são removidos
+rm -r                    #: Usado para remover arquivos em sub-diretórios
+rm -f                    #: Remove os arquivos sem perguntar
+rm teste.txt             #: Apaga o arquivo teste.txt no diretório atual
+rm *.txt                 #: Apaga todos os arquivos do diretório atual que terminam com .txt
 rm *.txt teste.novo      #: Apaga todos os arquivos do diretório atual que terminam com .txt e também o arquivo teste.novo
 cp                       #: Copia arquivos
 cp -i                    #: Pergunta antes de substituir um arquivo existente
