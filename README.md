@@ -3,6 +3,7 @@
 # Indice
 
 <a href="#Sobre">Sobre</a></br>
+<a href="#FHS">Hierarquia Padrão do Sistema de Arquivos</a></br>
 <a href="#Comandos">Comandos de Manipulação Diretórios</a></br>
 <a href="#Comandos_Arquivos">Comandos de Manipulação de Arquivos</a></br>
 <a href="#Comandos_Diversos">Comandos Diversos</a></br>
@@ -268,6 +269,27 @@ yum clean all                       #: Remove os arquivos de cache e o cabeçalh
 ```
   
  
-  
+
+# FHS
+
+>FHS - FileSystem Hierarchy Standart
+>Hierarquia Padrão do Sistema de Arquivos
+
+/(Diretório raiz)
+
+├── /home #Diretório de trabalho dos usuários
+├── /root #Diretório de trabalho do administrador   
+├── /boot #kernel do sistema - processo de boot
+├── /bin  #a maioria dos programas possui o seu aquivo executável
+├── /sbin #ferramentas para configurar e manutenção do sistema
+├── /lib  #bibliotecas compartilhadas
+├── /dev  #arquivos de dispositivos de suporte
+├── /etc  #arquivos de configuração específicos à máquina
+├── /tmp  #arquivos temporários
+├── /mnt  #local de montagem dos discos flexíveis 
+├── /proc #processos em execução
+├── /usr  #todo o sistema Linux se encontra sob ele
+├── /var  #contém arquivos de dados variáveis
+└── /opt  #pacotes adicionais
   
   
