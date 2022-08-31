@@ -82,18 +82,17 @@ mv teste.txt /tmp        #: Move o arquivo teste.txt para /tmp
  ```.sh
   
   
-df        #: Mostra o espaço livre/ocupado de cada partição
-df -h     #: Tamanho dos arquivos e diretórios em GB
-df -m     #: Tamanhos em Mb
-df -hT /home          #: Específico
-dt -T             #: Tipo de sistema de arquivos
-free              #: Mostra detalhes sobre a utilização da memória RAM do sistema
-free -m           #: Mostra o resultado em Mbytes
-free -t           #: Mostra uma linha contendo o total
-grep              #: Procura por um texto dentro de um arquivo
-grep “capitulo” texto.txt, ps ax | grep inetd, grep “capitulo” texto.txt -A 2 -B 2
-nl teste.txt      #: Mostra o número de linhas junto com o conteúdo de um arquivo
-tail              #: Mostra as linhas finais de um arquivo texto
+df                          #: Mostra o espaço livre/ocupado de cada partição
+df -h                       #: Tamanho dos arquivos e diretórios em GB
+df -m                       #: Tamanhos em Mb
+df -hT /home                #: Específico
+dt -T                       #: Tipo de sistema de arquivos
+free                        #: Mostra detalhes sobre a utilização da memória RAM do sistema
+free -m                     #: Mostra o resultado em Mbytes
+free -t                     #: Mostra uma linha contendo o total
+grep                        #: Procura por um texto dentro de um arquivo grep “capitulo” texto.txt, ps ax | grep inetd, grep “capitulo” texto.txt -A 2 -B 2
+nl teste.txt                #: Mostra o número de linhas junto com o conteúdo de um arquivo
+tail                        #: Mostra as linhas finais de um arquivo texto
 tail -n 10 teste.txt        #: Mostra as 10 ultimas linhas do arquivo teste.txt
 touch                       #: Muda a data e hora que um arquivo foi criado e cria arquivos também
 touch teste.txt             #: Cria o arquivo
@@ -120,10 +119,10 @@ shutdown -r now             #: Reinicia o computador imediatamente
  ```.sh
   
   
-ifconfig          #: Verificar seu endereço IP
-ifconfig eth0     #: Exibe a configuração de uma placa de rede eth0
-ifup eth0         #: Ativa uma interface ‘eth0’
-ifdown eth0       #: Desabilita
+ifconfig                                          #: Verificar seu endereço IP
+ifconfig eth0                                     #: Exibe a configuração de uma placa de rede eth0
+ifup eth0                                         #: Ativa uma interface ‘eth0’
+ifdown eth0                                       #: Desabilita
 ifconfig eth0 192.168.0.1 netmask 255.255.255.0   #: Configura IP
 dhclient eth0                                     #: Ativa a interface ‘eth0’ em modo dhcp
 route -n                                          #: Exibe tabela de rota
@@ -195,10 +194,10 @@ passwd -u fernando         #: Desbloqueia a conta de um usuário
   
  ```.sh
   
-bzip2           #: Comprime um arquivo
-bunzip2         #: Descompacta um arquivo
-gzip            #: Comprime um arquivo
-gunzip          #: Descompacta um arquivo
+bzip2                       #: Comprime um arquivo
+bunzip2                     #: Descompacta um arquivo
+gzip                        #: Comprime um arquivo
+gunzip                      #: Descompacta um arquivo
 tar -cvf arquivo.tar arq1 arq2 pasta1: Cria um arquivo contendo ‘arq1’, ‘ arq2′ e ‘pasta1’
 tar -xvf arquivo.tar        #: Extrai um arquivo tar
   
