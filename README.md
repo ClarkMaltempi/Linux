@@ -64,9 +64,14 @@ tac             #: Quase a mesma coisa só que, mostra o conteúdo inverso
 
   ```.sh
   
-touch [nome arquivo]                  #: Criar um arquivo vazio
-touch [nome arquivo]  [nome arquivo]  # Criando dois arquivos | utilizando o método metacaracter
-* [t*o *texto texto*]                 #: substitui um conjunto de caracter prefixo (começo) | sufixo (substitui no final)
+touch nome arquivo                    #: Criar um arquivo vazio
+touch nome arquivo  nome arquivo      # Criando dois arquivos | utilizando o método metacaracter
+* t*o *texto texto*                   #: substitui um conjunto de caracter prefixo (começo) | sufixo (substitui no final)
+? ?texto                              #: Substitui apenas um caracter
+?? ??texto                            #: pode ser usado subsequentemente como o exemplo, substitui dois caracter
+[]  [a1bx3]texto                      #: pesquisa um conjunto de palavras, usando distributiva com os valores dentro de colchetes
+ls [a:z][0:9]texto                    #: pesquisa caracter o alfabeto e de 0 a 9
+{} ls {a,1,bc}texto                   #: pesquisa caracter, similar chaves, porém, se não encontrar ele vai informar poluindo a tela
 rm                                    #: Apaga arquivos
 rm -i                                 #: Pergunta antes de remover, esta é ativada por padrão
 rm -v                                 #: Mostra os arquivos na medida que são removidos
