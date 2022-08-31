@@ -38,6 +38,8 @@ ls /root        #: Lista o diretório nativo - root.
 ls -l           #: Lista longa
 ls -l | more    #: more Administra a pagina de vídeo juntando com o comando ls através do | (pipe)
 ls -a           #: Lista Arquivos ocultos (identificado na frente do diretório e o arquivo um ".")
+ls -F           #: Lista e adiciona simbolo para identificar (diretório, arquivo e link)
+ls -Fa          #: Combinando comandos -a e -F
 ctrl C          #: Interrompe o processo
 cd home         #: Entra no Diretório home
 cd ~            #: Diretório HOME
