@@ -26,6 +26,8 @@
   
   
 ls              #: Lista os arquivos do diretório atual
+ls .            #: Lista os arquivos do diretório atual
+ls ..           #: Lista o diretório anterior
 ls /bin /sbin   #: Lista os arquivos do diretório /bin e /sbin
 ls -al          #: Exibição de todos arquivos até os ocultos
 ls -f           #: Não classifica a listagem
