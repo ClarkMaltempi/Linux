@@ -66,7 +66,7 @@ tac             #: Quase a mesma coisa só que, mostra o conteúdo inverso
   
 touch [nome arquivo]                  #: Criar um arquivo vazio
 touch [nome arquivo]  [nome arquivo]  # Criando dois arquivos | utilizando o método metacaracter
-*                                     #: substitui um conjunto de caracter prefixo (começo) | sufixo (substitui no final)
+* [t*o *texto texto*]                 #: substitui um conjunto de caracter prefixo (começo) | sufixo (substitui no final)
 rm                                    #: Apaga arquivos
 rm -i                                 #: Pergunta antes de remover, esta é ativada por padrão
 rm -v                                 #: Mostra os arquivos na medida que são removidos
