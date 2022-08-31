@@ -33,6 +33,7 @@ ls -al          #: Exibição de todos arquivos até os ocultos
 ls -f           #: Não classifica a listagem
 ls -n           #: Usa a identificação de usuário e grupo numérica
 ls -R           #: Lista diretórios e sub-diretórios recursivamente.
+ls ~            #: Lista o diretório nativo - home.
 cd home         #: Entra no Diretório home
 cd ~            #: Diretório HOME
 cd /            #: retornará ao diretório raíz.
