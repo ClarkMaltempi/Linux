@@ -271,7 +271,7 @@ yum clean all                       #: Remove os arquivos de cache e o cabeçalh
 
 # FHS
 
->FHS - FileSystem Hierarchy Standart
+>FHS - FileSystem Hierarchy Standart</br>
 >Hierarquia Padrão do Sistema de Arquivos
 
  ```shell
