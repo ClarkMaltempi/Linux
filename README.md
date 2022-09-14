@@ -53,6 +53,7 @@ cd /home/exe/exe2  #:Estando no Diretório home acessa diretamente exe2
 pwd             #: Mostra o diretório atual
 mkdir           #: Cria um diretório(No Windows seria chamado de pasta)
 mkdir dudu      #: Diretório criado
+mkdir -p aulas/aula01/teoria  #:Criar varios diretórios um dentro do outro automaticamente
 rmdir           #: Remove um diretório
 rmdir dudu      #: Diretório Removido
 tree            #: No diretório que deseja visualizar a arvore, digite esse comando, ele exibira uma arvore com os diretórios subsequentes
