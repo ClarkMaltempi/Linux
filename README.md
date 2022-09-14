@@ -49,6 +49,7 @@ cd ~            #: Diretório HOME
 cd /            #: retornará ao diretório raíz.
 cd -            #: Retornará ao diretório anteriormente acessado
 cd ..           #: Sobe um diretório
+cd /home/exe/exe2  #:Estando no Diretório home acessa diretamente exe2           
 pwd             #: Mostra o diretório atual
 mkdir           #: Cria um diretório(No Windows seria chamado de pasta)
 mkdir dudu      #: Diretório criado
