@@ -24,7 +24,11 @@
 
 ```.sh
   
-  
+dpkg -l         #: Para verificar se um pacote específico está instalado 
+dpkg -l         #: nomedopacote. Para saber quantos pacotes estão instalados
+dpkg -l | wc -l #: Para saber quantos pacotes estão instalados
+sudo apt list –-installed | less #:Lista menor de pacotes
+sudo apt list –-installed #:Listar pacotes Instalados
 ls              #: Lista os arquivos do diretório atual
 ls .            #: Lista os arquivos do diretório atual
 ls ..           #: Lista o diretório anterior
