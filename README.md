@@ -54,6 +54,7 @@ mkdir           #: Cria um diretório(No Windows seria chamado de pasta)
 mkdir dudu      #: Diretório criado
 rmdir           #: Remove um diretório
 rmdir dudu      #: Diretório Removido
+tree            #: No diretório que deseja visualizar a arvore, digite esse comando, ele exibira uma arvore com os diretórios subsequentes
 cat             #: Mostra o conteúdo de um arquivo de texto
 cat -n Exemplo.txt  #:Mostra o número das linhas
 tac             #: Quase a mesma coisa só que, mostra o conteúdo inverso
