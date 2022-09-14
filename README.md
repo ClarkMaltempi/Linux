@@ -23,7 +23,10 @@
 # Comandos
 
 ```.sh
-  
+
+sudo apt-get install -f #:Excluir pacotes quebrados
+sudo dpkg --configure -a #:Excluir pacotes quebrados
+sudo apt-get autoclean #:excluir arquivos que nao estao sendo utilizados, ou seja, arquivos que foram att e as versoes antigas ficaram no s.o
 dpkg -l         #: Para verificar se um pacote específico está instalado 
 dpkg -l         #: nomedopacote. Para saber quantos pacotes estão instalados
 dpkg -l | wc -l #: Para saber quantos pacotes estão instalados
