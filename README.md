@@ -328,6 +328,7 @@ yum clean all                       #: Remove os arquivos de cache e o cabeçalh
 ```
 # Permissao
 
+```shell
 >chmod #: Alterar as permissões
 
 Basicamente, cada arquivo tem três tipos de usuários que podem interagir com ele:
@@ -346,3 +347,5 @@ Outros:	Todos os outros usuários, no sistema que não são nem proprietários n
 -rwxrwxrwx	    #:777	Proprietário, grupo e outros podem ler, escrever e executar.
 drwx——	        #:700	Apenas o proprietário pode ler e gravar neste diretório.
 drwxr-xr-x	    #:755	Proprietário, grupo e outros podem ler o diretório, mas apenas o proprietário pode alterar seu conteúdo.
+
+```
