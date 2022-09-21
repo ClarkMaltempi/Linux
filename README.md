@@ -14,6 +14,7 @@
 <a href="#Repositorios">Repositórios</a></br>
 <a href="#Repositorios_Redhat_Fedora_CentOS">Pacotes Redhat, Fedora, CentOS</a></br>
 <a href="#Instalacao">Instalação</a></br>
+<a href="#Permissao">Permissões</a></br>
 
 # Sobre
 
@@ -325,3 +326,23 @@ yum clean all                       #: Remove os arquivos de cache e o cabeçalh
 └── /opt  #pacotes adicionais
   
 ```
+# Permissao
+
+>chmod #: Alterar as permissões
+
+Basicamente, cada arquivo tem três tipos de usuários que podem interagir com ele:
+
+Proprietário:	É o usuário que criou e possui um arquivo/ diretório.
+Grupo:	Todos os usuários que são membros do mesmo grupo.
+Outros:	Todos os outros usuários, no sistema que não são nem proprietários nem membros do grupo.
+
+
+-rw——-	        #:600	Proprietário pode ler e escrever.
+-rw-r–r–	      #:644	Proprietário pode ler e escrever, o grupo e outros podem ler.
+-rw-rw-rw-	    #:666	Proprietário pode ler e escrever, o grupo e outros podem ler.
+-rwx——	        #:700	Proprietário pode ler, escrever e executar, grupo e outros não podem fazer nada com o arquivo.
+-rwx–x–x	      #:711	Proprietário pode ler, escrever e executar, o grupo e outros podem executar.
+-rwxr-xr-x	    #:755	Proprietário pode ler, escrever e executar, o grupo e outros podem ler e executar.
+-rwxrwxrwx	    #:777	Proprietário, grupo e outros podem ler, escrever e executar.
+drwx——	        #:700	Apenas o proprietário pode ler e gravar neste diretório.
+drwxr-xr-x	    #:755	Proprietário, grupo e outros podem ler o diretório, mas apenas o proprietário pode alterar seu conteúdo.
