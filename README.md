@@ -103,6 +103,7 @@ mv -i                                 #: Pergunta antes de substituir. É o padr
 mv -v                                 #: Mostra os arquivos que estão sendo movido
 mv teste.txt teste1.txt               #: Muda o nome do arquivo teste.txt para teste1.txt
 mv teste.txt /tmp                     #: Move o arquivo teste.txt para /tmp
+chmod 777 file2.txt                   #: este comando basicamente daria TODAS as permissões para cada tipo de usuário (proprietário, grupo e outros).
   
  ```
   
