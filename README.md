@@ -354,9 +354,9 @@ chown jerry:clients teste.txt     #:se temos um arquivo “teste.txt” e querem
 chown jerry demo.txt #: alterar o proprietário do arquivo
 chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 
--f”     #: Silencioso, furtivo ou simplesmente força. Não mostrará a maioria das mensagens de erro.
-“-v”    #: Dá-lhe um diagnóstico de cada arquivo que foi afetado pelo comando.
-“-c”    #: Semelhante a -v, mas só irá fornecer informações caso as alterações tenham sido feitas de fato.
+-f     #: Silencioso, furtivo ou simplesmente força. Não mostrará a maioria das mensagens de erro.
+-v    #: Dá-lhe um diagnóstico de cada arquivo que foi afetado pelo comando.
+-c    #: Semelhante a -v, mas só irá fornecer informações caso as alterações tenham sido feitas de fato.
 
 
 ```
