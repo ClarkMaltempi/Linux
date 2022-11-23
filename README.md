@@ -500,6 +500,15 @@ while condicao; do
   #:instrução
 done
 
+#: sem condição, delimitado pelo programa
+
+while :
+do
+
+break;
+
+
+done
 
 ```
 
