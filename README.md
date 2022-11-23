@@ -15,6 +15,7 @@
 <a href="#Repositorios_Redhat_Fedora_CentOS">Pacotes Redhat, Fedora, CentOS</a></br>
 <a href="#Instalacao">Instalação</a></br>
 <a href="#Permissao">Permissões</a></br>
+<a href="#Scripts">Scripts</a></br>
 
 # Sobre
 
@@ -357,6 +358,63 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 -f     #: Silencioso, furtivo ou simplesmente força. Não mostrará a maioria das mensagens de erro.
 -v    #: Dá-lhe um diagnóstico de cada arquivo que foi afetado pelo comando.
 -c    #: Semelhante a -v, mas só irá fornecer informações caso as alterações tenham sido feitas de fato.
+
+
+```
+
+# Scripts
+
+
+```shell
+
+#: Definir um arquivo bash, salvar com o nomedoarquivo.sh com o seguinte cabeçalho 
+
+#!/bin/bash
+
+#: Executando o arquivo
+
+./nomedoarquivo.sh
+
+#: Comparação com Strings
+
+= #: igualdade
+!= #: Diferente
+-n #: É não nula
+-z #: é nula
+
+#: Comparação Numérica
+
+
+-t É menor que (LessThan)
+
+-gt É maior que (GreaterThan)
+
+-le É menor igual (LessEqual)
+
+-ge É maior igual (GreaterEqual)
+
+-eq É igual (EQual)
+
+-ne É diferente (NotEqual)
+
+
+#: Operadores Lógicos
+
+~= NÃO lógico (NOT)
+
+&& E lógico (AND)
+
+|| OU lógico (OR)
+
+#: Definindo condicional
+
+if [ condicao ]; then
+    #: comando
+fi
+
+
+
+
 
 
 ```
