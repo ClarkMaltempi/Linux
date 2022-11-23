@@ -483,7 +483,22 @@ fim(){
 Principal
 
 
+#: Estrutura de repetição For
 
+for var in var; do
+  #: instrução
+done
+
+for ((i=1; i<=n; i++));do
+  #: Instrução
+done
+
+
+#: Estrutura de Repetição - Laço While
+
+while condicao; do
+  #:instrução
+done
 
 
 ```
