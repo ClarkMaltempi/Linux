@@ -412,8 +412,46 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 #: Definindo condicional
 
 if [ condicao ]; then
-    #: comando
+    #: instrução
 fi
+
+#: Definindo condicional
+
+if [ condicao ]; then
+    #: instrução
+    
+elif [ condicao ]; then
+    #: instrução
+
+else
+    #: instrução
+
+fi
+
+
+#: Testes em arquivos
+
+-b #: É um dispositivo de bloco
+-c #: É um dispositivo de caractere
+-d #: É um diretório
+-e #: O arquivo existe
+-f #: É um arquivo normal 
+-g #: O bit SGID está ativado
+-G #: O grupo do arquivo é o do usuário atual
+-k #: O sticky-bit está ativado
+-L #: O arquivo é um link simbólico
+-O #: O dono do arquivo é o usuário atual
+-p #: O arquivo é um named pipe
+-r #: O arquivo tem permissão de leitura
+-s #: O tamanho do arquivo é maior que zero
+-S #: O arquivo é um socket
+-t #: O descritor de arquivos N é um terminal
+-u #: O bit SUID está ativado
+-w #: O arquivo tem permissão de escrita
+-x #: O arquivo tem permissão de execução
+-nt #: O arquivo é mais recente (NewerThan)
+-ot #: O arquivo é mais antigo (OlderThan)
+-ef #: O arquivo é o mesmo (EqualFile)
 
 
 
@@ -421,3 +459,5 @@ fi
 
 
 ```
+
+
