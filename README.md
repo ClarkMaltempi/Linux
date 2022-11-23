@@ -367,6 +367,52 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 
 ```shell
 
+
+#: Criação de variáveis
+
+Teste=valor
+echo $teste
+
+#: disponibilizar a variável criada para outros shell
+export teste
+
+#:remover uma variável de ambiente, tirar da memória
+unset teste
+
+#:-> Mostra os processos bash em execução
+ps 
+
+#:Utilizando Array
+
+Teste=(morango laranja abacaxi)
+echo ${teste[*]} mostrando todos os elementos
+echo ${teste[1]} mostrando uma posição
+testearray[2]=banana atribuindo um novo elemento
+unset testearray[2] remover itens
+unset testearray[*]
+
+#: aliases -> apelido para um commando
+
+alias mo=’more’
+alias lshome=’cd /home; ls’ 
+alias lsl=’ls-l’
+ unalias lsl -> retira o comando do sistema
+
+#: Função
+
+Função(){comandos}
+Palavra(){
+Cd /home/fabio
+Echo ‘ Linha acrescentada’ >> teste_func
+}
+>> Anexar e escrever no arquivo
+Typeset –f funções definidas no bash
+Bashrc – Comandos configurados no sistema
+
+
+
+
+
 #: Definir um arquivo bash, salvar com o nomedoarquivo.sh com o seguinte cabeçalho 
 
 #!/bin/bash
