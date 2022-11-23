@@ -408,6 +408,7 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 
 || OU lógico (OR)
 
+
 #: Definindo condicional
 
 if [ condicao ]; then
