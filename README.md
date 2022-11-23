@@ -371,9 +371,11 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 
 #!/bin/bash
 
+
 #: Executando o arquivo
 
 ./nomedoarquivo.sh
+
 
 #: Comparação com Strings
 
@@ -382,8 +384,8 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 -n #: É não nula
 -z #: é nula
 
-#: Comparação Numérica
 
+#: Comparação Numérica
 
 -t É menor que (LessThan)
 
