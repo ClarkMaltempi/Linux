@@ -415,7 +415,7 @@ if [ condicao ]; then
     #: instrução
 fi
 
-#: Definindo condicional
+#: Definindo condicional Senão Se
 
 if [ condicao ]; then
     #: instrução
@@ -454,9 +454,33 @@ fi
 -ef #: O arquivo é o mesmo (EqualFile)
 
 
+#: Exemplo de case Menu
 
+Principal(){
 
+clear; echo
+echo "          MENU                "
+echo "------------------------------"
+echo " 1. Rota                      "
+echo " 2. Data - dd/mm/aaaa         "
+echo " 3. Sair                      "
+echo; read -p "Faça sua escolha: " op; echo
+case $op in
+1) rota;;
+2) data;;
+3) echo "Encerrando execução..."; sleep 5; clear; exit;;
+*)erro;;
 
+esac
+}
+
+rota(){}
+data(){}
+erro(){}
+fim(){
+  sleep 5; Principal
+}
+Principal
 
 ```
 
