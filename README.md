@@ -678,3 +678,40 @@ Script
 -s #:cola um arquivo de cada vez em vez de em paralelo
 
  ```
+ 
+ # Scripts Exe
+ 
+ <p> Procura um arquivo pelo nome
+ 
+ ```bash
+ 
+ if [ $# -ne 2 ]; then
+    echo "Para executar $0 forneça"; echo
+    echo "1 argumento: o diretório"; 
+    echo "2 argumento: o arquivo"; echo
+    exit
+ fi
+ 
+ if [ -d $1 ]; then
+   cd $1
+
+   for i in `ls $1`; do
+    if [ $i = $2 ]; then
+        if [ -e $i ]; then
+          echo $i
+          echo "O arquivo informado é: %i"
+          resultado 1
+          break
+        fi
+    else
+      resultado=0
+    fi
+   done
+   
+    if [ $resultado -eq 0 ]; then
+      echo "Arquivo não encontrado"
+    fi
+ fi
+ 
+  ```
+ 
