@@ -564,6 +564,8 @@ done
 
 <p>Principais Parâmetros: -c conta bytes.</p>
 
+
+
 ```bash
 
 -c #:conta bytes.
@@ -573,10 +575,10 @@ done
 -w #:conta palavras.
 −−help #:exibe as opções do utilitário.
 −−version #:mostra informações sobre o utilitário.
-Script
 
 ```
-<img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/Linux/tree/main/Image/Comando_wc.png"/>
+<img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_wc.png"/>
+
 
 # Comando cut
 
@@ -594,6 +596,7 @@ Script
 -s #:não imprime as linhas que tenham os delimitador especificado
   
   ```
+  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_cut.png"/>
   
   # Comando sed
   
@@ -618,7 +621,8 @@ Script
 -x #:Imprime os comandos (após expansões) antes de executá-los. 
       
   ```
-    
+  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_sed.png"/>  
+  
   # Comando tr  
     
   <p>Finalidade: substitui o conteúdo de uma string recebido via entrada padrão de um formato para outro, ou ainda exclui caracteres
@@ -632,7 +636,8 @@ Script
 -s #:substitui cada sequência de um caractere repetido listado no conjunto1 com uma única ocorrência do caractere
 
   ```
-    
+ <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_tr.png"/>
+ 
 # Comando uniq
 
 <p> Finalidade: O uniq filtra as linhas adjacentes correspondentes do arquivo de entrada INPUT, gravando os dados filtrados no arquivo de saída OUTPUT.
@@ -652,6 +657,10 @@ Script
 -w #:compara no máximo N caracteres por linha
   
   ```
+  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_uniq.png"/>
+  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_uniq_img2.png"/>
+  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_uniq_img3.png"/>
+  
   # Comando sort
   
   <p> Finalidade: comando sort organiza as linhas de um arquivo por ordem numérica ou alfabética
@@ -667,6 +676,8 @@ Script
    -n #:organiza os números em ordem aritmética
    
     ```
+   <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_Sort.png"/> 
+    
   # Comando paste
     
   <p>Finalidade: serve como saída a junção de linha dos arquivos
@@ -679,6 +690,7 @@ Script
 -s #:cola um arquivo de cada vez em vez de em paralelo
 
  ```
+ <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_paste.png"/>
  
  # Scripts Exe
  
