@@ -651,3 +651,30 @@ Script
 -w #:compara no máximo N caracteres por linha
   
   ```
+  # Comando sort
+  
+  <p> Finalidade: comando sort organiza as linhas de um arquivo por ordem numérica ou alfabética
+    
+  <p> Sintaxe: sort [parametro] [arquivo] 
+   
+    ```bash
+   -b #:ignora espaços em branco iniciais
+   -d #:considera apenas espaços em branco e caracteres alfanuméricos 
+   -f #:troca minúsculas para maiúsculas 
+   -g #:compara acordo com o valor numérico geral 
+   -r #:organiza em ordem decrescente 
+   -n #:organiza os números em ordem aritmética
+   
+    ```
+  # Comando paste
+    
+  <p>Finalidade: serve como saída a junção de linha dos arquivos
+      
+  <p>Sintaxe: paste [parâmetro] [file]
+ 
+```bash
+    
+-d #:reutiliza caracteres da lista em vez de guias
+-s #:cola um arquivo de cada vez em vez de em paralelo
+
+ ```
