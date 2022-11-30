@@ -682,6 +682,9 @@ Script
  # Scripts Exe
  
  <p> Procura um arquivo pelo nome
+ <p> No caso desses scripts especificamente, está sendo tratado Argumentos
+fornecidos na sua execução
+ <p> Após criar o arquivo .bash e alterar a permissão do arquivo, para executar utiliza-se ./nomescript.sh diretorio variavel
  
  ```bash
  
