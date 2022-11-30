@@ -672,7 +672,7 @@ done
 
 <p> Finalidade: O uniq filtra as linhas adjacentes correspondentes do arquivo de entrada INPUT, gravando os dados filtrados no arquivo de saída OUTPUT.
  
-<p> Sintaxe: uniq [parametro] arquivo  
+>Sintaxe: uniq [parametro] arquivo  
  
  ```bash
   
@@ -695,17 +695,19 @@ done
   
   <p> Finalidade: comando sort organiza as linhas de um arquivo por ordem numérica ou alfabética
     
-  <p> Sintaxe: sort [parametro] [arquivo] 
+  > Sintaxe: sort [parametro] [arquivo] 
    
     ```bash
+    
    -b #:ignora espaços em branco iniciais
    -d #:considera apenas espaços em branco e caracteres alfanuméricos 
    -f #:troca minúsculas para maiúsculas 
    -g #:compara acordo com o valor numérico geral 
    -r #:organiza em ordem decrescente 
    -n #:organiza os números em ordem aritmética
-   
+    
     ```
+    
    <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_Sort.png"/> 
     
   # Comando paste
@@ -748,6 +750,7 @@ done
 -r #:Ira realizar uma pesquisa recursiva em todos os diretórios a partir do informado  
  
 ```  
+<img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_grep.png"/> 
   
  # Scripts Exe
  
