@@ -826,7 +826,7 @@ fornecidos na sua execução
    
   ```
    
-   <p> Procurando Palavra dentro de um arquivo pelo nome utilizando o grep
+   <p> Procurando Palavra dentro de um arquivo pelo nome utilizando o grep</p>
      
     ```bash
      
@@ -846,4 +846,4 @@ fornecidos na sua execução
      ```
      >Execução ./arquivo.sh diretorio palavraaserpesquisada
      
-    ```
+
