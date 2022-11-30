@@ -398,11 +398,11 @@ ps
 
 ```shell
 Teste=(morango laranja abacaxi)
-echo ${teste[*]} mostrando todos os elementos
-echo ${teste[1]} mostrando uma posição
-testearray[2]=banana atribuindo um novo elemento
-unset testearray[2] remover itens
-unset testearray[*]
+echo ${teste[*]} #:mostrando todos os elementos
+echo ${teste[1]} #:mostrando uma posição
+testearray[2]=banana #:atribuindo um novo elemento
+unset testearray[2] #:remover itens
+unset testearray[*] #:remove todos os elementos
 ```
 
 #  aliases -> apelido para um commando
