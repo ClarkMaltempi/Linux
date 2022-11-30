@@ -576,7 +576,7 @@ done
 Script
 
 ```
-<img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/Linux/tree/main/Image/Comando_wc"/>
+<img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/Linux/tree/main/Image/Comando_wc.png"/>
 
 # Comando cut
 
