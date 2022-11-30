@@ -733,6 +733,9 @@ Script
           conteudo=`cat $i`
           for palavra in $conteudo; do
               if [ $palavra = "estrutura" ]; then
+   
+                str=$palavra
+                echo "A palavra pesquisada foi: "$palavra; echo
                 echo $i
               fi
 
