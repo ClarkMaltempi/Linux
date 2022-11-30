@@ -653,7 +653,7 @@ done
   ```
   <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_sed.png"/>  
   
-  # Comando tr  
+# Comando tr  
     
   <p>Finalidade: substitui o conteúdo de uma string recebido via entrada padrão de um formato para outro, ou ainda exclui caracteres
     
@@ -686,7 +686,7 @@ done
 -z #:termina linhas com o byte 0, não uma nova linha
 -w #:compara no máximo N caracteres por linha
   
-  ```
+```
   <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_uniq.png"/>
   <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_uniq_img2.png"/>
   <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_uniq_img3.png"/>
@@ -706,7 +706,7 @@ done
    -r  #: organiza em ordem decrescente 
    -n  #: organiza os números em ordem aritmética
     
-    ```
+   ```
     
    <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_Sort.png"/> 
     
@@ -714,9 +714,9 @@ done
     
   # Comando paste
     
-  <p>Finalidade: serve como saída a junção de linha dos arquivos
+ <p>Finalidade: serve como saída a junção de linha dos arquivos</p>
       
-  >Sintaxe: paste [parâmetro] [file]
+ >Sintaxe: paste [parâmetro] [file]
  
 ```bash
     
