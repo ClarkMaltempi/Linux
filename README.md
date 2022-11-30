@@ -845,10 +845,19 @@ fornecidos na sua execução
      echo $str; 
      fi
      
+     #Outra maneira de executar separando por espaço utilizando o cut
+     
+     for str in $(grep -ro $2 $1 | cut -d" " -f1); do
+     
+     echo $str
+     
+     done
+     
    ```
+   
    <p>Execução ./arquivo.sh diretorio palavraaserpesquisada</p>
      
-   <p>Renomear os arquivos substituindo - por _ (underline)</p>
+   <p>Renomeia os arquivos substituindo - por _ (underline) utilizando "sed" representado pelo "//" </p>
    
    ```bash
    
