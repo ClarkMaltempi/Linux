@@ -693,18 +693,18 @@ done
   
   # Comando sort
   
-  <p> Finalidade: comando sort organiza as linhas de um arquivo por ordem numérica ou alfabética
+  <p> Finalidade: comando sort organiza as linhas de um arquivo por ordem numérica ou alfabética</p>
     
   > Sintaxe: sort [parametro] [arquivo] 
    
-    ```bash
+   ```bash
     
-   -b #:ignora espaços em branco iniciais
-   -d #:considera apenas espaços em branco e caracteres alfanuméricos 
-   -f #:troca minúsculas para maiúsculas 
-   -g #:compara acordo com o valor numérico geral 
-   -r #:organiza em ordem decrescente 
-   -n #:organiza os números em ordem aritmética
+   -b  #:ignora espaços em branco iniciais
+   -d  #:considera apenas espaços em branco e caracteres alfanuméricos 
+   -f  #:troca minúsculas para maiúsculas 
+   -g  #:compara acordo com o valor numérico geral 
+   -r  #:organiza em ordem decrescente 
+   -n  #:organiza os números em ordem aritmética
     
     ```
     
