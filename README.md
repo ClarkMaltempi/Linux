@@ -576,6 +576,7 @@ done
 Script
 
 ```
+<img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/PessoaFisicaJuridica.png"/>
 
 # Comando cut
 
