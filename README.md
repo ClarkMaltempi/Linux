@@ -566,13 +566,13 @@ done
 
 ```bash
 
--c conta bytes.
--l conta linhas.
--L mostra o comprimento da linha mais longa.
--m conta caracteres.
--w conta palavras.
-−−help exibe as opções do utilitário.
-−−version mostra informações sobre o utilitário.
+-c #:conta bytes.
+-l #:conta linhas.
+-L #:mostra o comprimento da linha mais longa.
+-m #:conta caracteres.
+-w #:conta palavras.
+−−help #:exibe as opções do utilitário.
+−−version #:mostra informações sobre o utilitário.
 Script
 
 ```
@@ -585,12 +585,12 @@ Script
   
  ```bash
 
--b seleciona o(s) byte(s) informado(s)
--c seleciona somente o(s) caráter(es) informado(s)
--d especifica um delimitador
--f seleciona o(s) campo(s) informado(s)
--complement complementa baseado em em bytes, caracteres ou campos especificados
--s não imprime as linhas que tenham os delimitador especificado
+-b #:seleciona o(s) byte(s) informado(s)
+-c #:seleciona somente o(s) caráter(es) informado(s)
+-d #:especifica um delimitador
+-f #:seleciona o(s) campo(s) informado(s)
+-complement #:complementa baseado em em bytes, caracteres ou campos especificados
+-s #:não imprime as linhas que tenham os delimitador especificado
   
   ```
   
@@ -605,15 +605,49 @@ Script
   
  ```bash
     
--a Exporta todas as variáveis subsequentemente definidas.
--b Imprime mensagens de término de trabalhos imediatamente, ao invés de esperar pelo próximo prompt. Direcionada para uso interativo
--c se sobrepõe a essa opção. Direcionada para uso interativo.
--e encerra o shell quando um comando encerra com um estado diferente de zero.
--f desabilita a expansão de coringas
--m Habilita o controle de trabalhos (habilita por omissão). Direcionada para uso interativo.
--n Lê comandos e verifica erros de sintaxe, mas não os executa. Shells interativos têm permissão para ignorar essa opção.
--u Trata variáveis indefinidas como erros, não como null.
--v Imprime os comandos (conforme escritos) antes de os executar.
--x Imprime os comandos (após expansões) antes de executá-los. 
+-a #:Exporta todas as variáveis subsequentemente definidas.
+-b #:Imprime mensagens de término de trabalhos imediatamente, ao invés de esperar pelo próximo prompt. Direcionada para uso interativo
+-c #:se sobrepõe a essa opção. Direcionada para uso interativo.
+-e #:encerra o shell quando um comando encerra com um estado diferente de zero.
+-f #:desabilita a expansão de coringas
+-m #:Habilita o controle de trabalhos (habilita por omissão). Direcionada para uso interativo.
+-n #:Lê comandos e verifica erros de sintaxe, mas não os executa. Shells interativos têm permissão para ignorar essa opção.
+-u #:Trata variáveis indefinidas como erros, não como null.
+-v #:Imprime os comandos (conforme escritos) antes de os executar.
+-x #:Imprime os comandos (após expansões) antes de executá-los. 
       
+  ```
+    
+  # Comando tr  
+    
+  <p>Finalidade: substitui o conteúdo de uma string recebido via entrada padrão de um formato para outro, ou ainda exclui caracteres
+    
+  <p> Sintaxe: tr [parâmetro] conjunto1 [conjunto2]
+    
+```bash
+    
+-c #:usa o complemento do conjunto1 (conjunto inverso)
+-d #:exclui caracteres do conjunto1, sem traduzi-los
+-s #:substitui cada sequência de um caractere repetido listado no conjunto1 com uma única ocorrência do caractere
+
+  ```
+    
+# Comando uniq
+
+<p> Finalidade: O uniq filtra as linhas adjacentes correspondentes do arquivo de entrada INPUT, gravando os dados filtrados no arquivo de saída OUTPUT.
+ 
+<p> Sintaxe: uniq [parametro] arquivo  
+ 
+ ```bash
+  
+-c #:prefixa as linhas com a quantidade de ocorrências
+-d #:só emite as linhas duplicadas (um exemplar de cada)
+-D #:imprime todas as linhas duplicadas
+-f #:evita comparar os primeiros N campos
+-i #:ignore-case ignora diferenças de maiúsculas/minúsculas ao comparar
+-s #:evita comparar os primeiros N caracteres
+-u #:imprime somente linhas únicas
+-z #:termina linhas com o byte 0, não uma nova linha
+-w #:compara no máximo N caracteres por linha
+  
   ```
