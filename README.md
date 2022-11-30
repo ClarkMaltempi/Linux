@@ -718,7 +718,7 @@ Script
   
    ```bash
    
-  if [ $# -ne 2 ]; then
+  if [ $# -ne 1 ]; then
     echo "Para executar $0 forneça"; echo
     echo "1 argumento: o diretório"; 
     echo "2 argumento: o arquivo"; echo
