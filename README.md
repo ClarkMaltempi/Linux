@@ -826,9 +826,9 @@ fornecidos na sua execução
    
   ```
    
-   <p> Procurando Palavra dentro de um arquivo pelo nome utilizando o grep</p>
+  <p>Procurando Palavra dentro de um arquivo pelo nome utilizando o grep</p>
      
-    ```bash
+  ```bash
      
      if [ $# -ne 2 ]; then
        echo "Para executar $0 forneça"; echo
@@ -843,7 +843,7 @@ fornecidos na sua execução
      echo $str; 
      fi
      
-     ```
+   ```
      >Execução ./arquivo.sh diretorio palavraaserpesquisada
      
 
