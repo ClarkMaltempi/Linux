@@ -665,7 +665,7 @@ done
 -d #:exclui caracteres do conjunto1, sem traduzi-los
 -s #:substitui cada sequência de um caractere repetido listado no conjunto1 com uma única ocorrência do caractere
 
-  ```
+```
  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_tr.png"/>
  
 # Comando uniq
@@ -674,7 +674,7 @@ done
  
 >Sintaxe: uniq [parametro] arquivo  
  
- ```bash
+```bash
   
 -c #:prefixa as linhas com a quantidade de ocorrências
 -d #:só emite as linhas duplicadas (um exemplar de cada)
@@ -695,20 +695,22 @@ done
   
   <p> Finalidade: comando sort organiza as linhas de um arquivo por ordem numérica ou alfabética</p>
     
-  > Sintaxe: sort [parametro] [arquivo] 
+  >Sintaxe: sort [parametro] [arquivo] 
    
-   ```bash
+  ```bash
     
-   -b  #:ignora espaços em branco iniciais
-   -d  #:considera apenas espaços em branco e caracteres alfanuméricos 
-   -f  #:troca minúsculas para maiúsculas 
-   -g  #:compara acordo com o valor numérico geral 
-   -r  #:organiza em ordem decrescente 
-   -n  #:organiza os números em ordem aritmética
+   -b  #: ignora espaços em branco iniciais
+   -d  #: considera apenas espaços em branco e caracteres alfanuméricos 
+   -f  #: troca minúsculas para maiúsculas 
+   -g  #: compara acordo com o valor numérico geral 
+   -r  #: organiza em ordem decrescente 
+   -n  #: organiza os números em ordem aritmética
     
     ```
     
    <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_Sort.png"/> 
+    
+    
     
   # Comando paste
     
