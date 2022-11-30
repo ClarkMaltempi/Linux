@@ -712,7 +712,7 @@ done
     
   <p>Finalidade: serve como saída a junção de linha dos arquivos
       
-  <p>Sintaxe: paste [parâmetro] [file]
+  >Sintaxe: paste [parâmetro] [file]
  
 ```bash
     
@@ -721,7 +721,34 @@ done
 
  ```
  <img width="80%" heigth="70%" src="https://github.com/ClarkMaltempi/JAVA/blob/main/Image/Comando_paste.png"/>
+    
  
+  # Comando grep
+    
+ <p>Finalidade: procura por trechos de texto (strings) dentro de arquivos ou diretórios e retorna para você em quais arquivos a string foi encontrada, inclusive <p>mostrando a linha em que isso ocorreu  
+   
+ >Sintaxe: grep "trecho a procurar" arquivo.txt
+   
+   
+<p>Variações: egrep, fgrep
+<p>Parâmetro:
+  
+ ```bash 
+-c #:Conta quantas vezes apareceu a string que esta pesquisando
+-v #:Mostra na tela “tudo” menos onde houver a ocorrência da string pesquisada
+-i #:Realiza uma busca pela string ignorando o case, sendo case-insensitive
+-o #:Ira mostrar na tela apenas as ocorrências da string pesquisada ignorando o resto
+-n #:Ira mostrar na tela na primeira coluna a linha onde encontrou a string pesquisada
+-B #:Numero de linhas a serem impressas antes da linha que contem a string pesquisada
+-A #:Numero de linhas a serem impressas na tela depois da encontrar a linha com a string
+-C #:Quantidade de linhas antes e depois da linha que contem a string
+-q #:Ira procurar pela string informada, porém estará em modo silencioso, nada sera impresso na tela
+-l #:Mostra somente o nome do arquivo onde foi encontrado a string pesquisada
+-L #:mostra apenas os arquivo que não contem a string informada
+-r #:Ira realizar uma pesquisa recursiva em todos os diretórios a partir do informado  
+ 
+```  
+  
  # Scripts Exe
  
  <p> Procura um arquivo pelo nome
