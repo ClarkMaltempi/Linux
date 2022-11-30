@@ -365,41 +365,57 @@ chown :clients demo.txt #: alterar o proprietário do grupo do arquivo
 # Scripts
 
 
+
+
+
+# Criação de variáveis
+
 ```shell
-
-
-#: Criação de variáveis
 
 Teste=valor
 echo $teste
 
-#: disponibilizar a variável criada para outros shell
+```
+
+
+# disponibilizar a variável criada para outros shell
+
+```shell
 export teste
+```
 
-#:remover uma variável de ambiente, tirar da memória
+# remover uma variável de ambiente, tirar da memória
+```shell
 unset teste
+```
 
-#:-> Mostra os processos bash em execução
+# Mostra os processos bash em execução
+```shell
 ps 
+```
 
-#:Utilizando Array
+# Utilizando Array
 
+```shell
 Teste=(morango laranja abacaxi)
 echo ${teste[*]} mostrando todos os elementos
 echo ${teste[1]} mostrando uma posição
 testearray[2]=banana atribuindo um novo elemento
 unset testearray[2] remover itens
 unset testearray[*]
+```
 
-#: aliases -> apelido para um commando
+#  aliases -> apelido para um commando
 
+```shell
 alias mo=’more’
 alias lshome=’cd /home; ls’ 
 alias lsl=’ls-l’
  unalias lsl -> retira o comando do sistema
+```
+# Função
 
-#: Função
-
+```shell
 Função(){comandos}
 Palavra(){
 Cd /home/fabio
@@ -408,31 +424,34 @@ Echo ‘ Linha acrescentada’ >> teste_func
 >> Anexar e escrever no arquivo
 Typeset –f funções definidas no bash
 Bashrc – Comandos configurados no sistema
+```
 
 
 
 
+# Definir um arquivo bash, salvar com o nomedoarquivo.sh com o seguinte cabeçalho 
 
-#: Definir um arquivo bash, salvar com o nomedoarquivo.sh com o seguinte cabeçalho 
-
+```shell
 #!/bin/bash
+```
 
-
-#: Executando o arquivo
-
+# Executando o arquivo
+```shell
 ./nomedoarquivo.sh
+```
 
+# Comparação com Strings
 
-#: Comparação com Strings
-
+```shell
 = #: igualdade
 != #: Diferente
 -n #: É não nula
 -z #: é nula
+```
 
+# Comparação Numérica
 
-#: Comparação Numérica
-
+```shell
 -t É menor que (LessThan)
 
 -gt É maior que (GreaterThan)
@@ -444,25 +463,29 @@ Bashrc – Comandos configurados no sistema
 -eq É igual (EQual)
 
 -ne É diferente (NotEqual)
+```
 
+# Operadores Lógicos
 
-#: Operadores Lógicos
-
+```shell
 ~= NÃO lógico (NOT)
 
 && E lógico (AND)
 
 || OU lógico (OR)
+```
 
+# Definindo condicional
 
-#: Definindo condicional
-
+```shell
 if [ condicao ]; then
     #: instrução
 fi
+```
 
-#: Definindo condicional Senão Se
+# Definindo condicional Senão Se
 
+```shell
 if [ condicao ]; then
     #: instrução
     
@@ -473,10 +496,11 @@ else
     #: instrução
 
 fi
+```
 
+# Testes em arquivos
 
-#: Testes em arquivos
-
+```shell
 -b #: É um dispositivo de bloco
 -c #: É um dispositivo de caractere
 -d #: É um diretório
@@ -498,10 +522,11 @@ fi
 -nt #: O arquivo é mais recente (NewerThan)
 -ot #: O arquivo é mais antigo (OlderThan)
 -ef #: O arquivo é o mesmo (EqualFile)
+```
 
+# Exemplo de case Menu
 
-#: Exemplo de case Menu
-
+```shell
 Principal(){
 
 clear; echo
@@ -527,10 +552,11 @@ fim(){
   sleep 5; Principal
 }
 Principal
+```
 
+# Estrutura de repetição For
 
-#: Estrutura de repetição For
-
+```shell
 for var in var; do
   #: instrução
 done
@@ -538,16 +564,19 @@ done
 for ((i=1; i<=n; i++));do
   #: Instrução
 done
+```
 
+# Estrutura de Repetição - Laço While
 
-#: Estrutura de Repetição - Laço While
-
+```shell
 while condicao; do
   #:instrução
 done
+```
 
-#: sem condição, delimitado pelo programa
+# sem condição, delimitado pelo programa
 
+```shell
 while :
 do
 
@@ -557,6 +586,7 @@ break;
 done
 
 ```
+
 # Comando wc
 <p>Finalidade: O comando wc vem da sigla (word count) e sua finalidade é contar linhas, palavras e caracteres de arquivos.</p>
 
