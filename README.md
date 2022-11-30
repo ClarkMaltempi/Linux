@@ -500,6 +500,8 @@ fi
 
 # Testes em arquivos
 
+>[parametro] $arquivo
+
 ```shell
 -b #: É um dispositivo de bloco
 -c #: É um dispositivo de caractere
