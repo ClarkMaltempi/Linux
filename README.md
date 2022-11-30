@@ -714,4 +714,33 @@ Script
  fi
  
   ```
- 
+ <p> Procurando Palavra dentro de um arquivo pelo nome
+  
+   ```bash
+   
+  if [ $# -ne 2 ]; then
+    echo "Para executar $0 forneça"; echo
+    echo "1 argumento: o diretório"; 
+    echo "2 argumento: o arquivo"; echo
+    exit
+ fi 
+   
+   if [ -d $1 ]; then
+     cd $1
+
+     for i in `ls $1`; do
+        if [ -e $i ]; then
+          conteudo=`cat $i`
+          for palavra in $conteudo; do
+              if [ $palavra = "estrutura" ]; then
+                echo $i
+              fi
+
+          done
+        fi
+     done
+   
+   fi
+   
+   
+  ```
