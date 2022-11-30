@@ -825,3 +825,25 @@ fornecidos na sua execução
    
    
   ```
+   
+   <p> Procurando Palavra dentro de um arquivo pelo nome utilizando o grep
+     
+    ```bash
+     
+     if [ $# -ne 2 ]; then
+       echo "Para executar $0 forneça"; echo
+       echo "1 argumento: o diretório";
+       echo "2 argumento: palavra";
+       exit
+     fi
+     
+     if [ -d $1 ]; then
+      cd $1
+     str=$(grep -ro $2 $1)
+     echo $str; 
+     fi
+     
+     ```
+     >Execução ./arquivo.sh diretorio palavraaserpesquisada
+     
+    ```
