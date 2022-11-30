@@ -846,4 +846,17 @@ fornecidos na sua execução
    ```
    <p>Execução ./arquivo.sh diretorio palavraaserpesquisada</p>
      
-
+   <p>Renomear os arquivos substituindo - por _ (underline)</p>
+   
+   ```bash
+   
+   for i in `ls *$2`; do
+      palavra="${i//-/_}"
+      if [ "$palavra" != "$i" ]; then
+            echo "$i -----> $palavra"
+            mv $i $palavra
+      fi
+   
+    ```
+   
+   
