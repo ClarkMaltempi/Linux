@@ -592,5 +592,28 @@ Script
 -complement complementa baseado em em bytes, caracteres ou campos especificados
 -s não imprime as linhas que tenham os delimitador especificado
   
+  ```
   
+  # Comando sed
+  
+ <p>Finalidade:
+ <p>Imprimir os nomes e valores de todas as variáveis do shell de forma ordenada;
+ <p>Trocar os parâmetros posicionais;
+ <p>Habilitar/desabilitar opções do shell
+   
+  <p>Sintaxe: sed [parâmetro] comando [arquivo] 
+  
+ ```bash
+    
+-a Exporta todas as variáveis subsequentemente definidas.
+-b Imprime mensagens de término de trabalhos imediatamente, ao invés de esperar pelo próximo prompt. Direcionada para uso interativo
+-c se sobrepõe a essa opção. Direcionada para uso interativo.
+-e encerra o shell quando um comando encerra com um estado diferente de zero.
+-f desabilita a expansão de coringas
+-m Habilita o controle de trabalhos (habilita por omissão). Direcionada para uso interativo.
+-n Lê comandos e verifica erros de sintaxe, mas não os executa. Shells interativos têm permissão para ignorar essa opção.
+-u Trata variáveis indefinidas como erros, não como null.
+-v Imprime os comandos (conforme escritos) antes de os executar.
+-x Imprime os comandos (após expansões) antes de executá-los. 
+      
   ```
