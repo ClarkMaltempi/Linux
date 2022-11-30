@@ -557,7 +557,7 @@ break;
 done
 
 ```
-<p>Comando wc</p>
+# Comando wc
 <p>Finalidade: O comando wc vem da sigla (word count) e sua finalidade é contar linhas, palavras e caracteres de arquivos.</p>
 
 <p>Sintaxe: wc [opções] [arquivo]</p>
