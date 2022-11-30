@@ -577,5 +577,20 @@ Script
 
 ```
 
+# Comando cut
 
+<p>Finalidade: O comando cut pode ser usado para mostrar apenas seções específicas de um arquivo de texto ou da saída de outros comandos. Ele lê o conteúdo de um ou <p>mais arquivos, ou a saída de comandos, e apresenta como resultado uma coluna.
 
+<p> Sintaxe: cut [parâmetro] [delimitador] -f[coluna]
+  
+ ```bash
+
+-b seleciona o(s) byte(s) informado(s)
+-c seleciona somente o(s) caráter(es) informado(s)
+-d especifica um delimitador
+-f seleciona o(s) campo(s) informado(s)
+-complement complementa baseado em em bytes, caracteres ou campos especificados
+-s não imprime as linhas que tenham os delimitador especificado
+  
+  
+  ```
